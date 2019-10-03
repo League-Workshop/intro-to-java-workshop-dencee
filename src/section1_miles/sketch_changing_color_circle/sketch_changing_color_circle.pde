@@ -1,9 +1,12 @@
-void setup (){
-  size(800,800);
+void setup () {
+  size(1000, 1000);
 }
-void draw(){ 
-ellipse(200,200,200,200);
-if(mousePressed){
- fill(#8CEA21); 
-}
+void draw() { 
+  ellipse(mouseX, mouseY, 100,1900,);
+  if (mousePressed) {
+    if (mouseButton==RIGHT) {
+      background(#FFFFFF);
+    }
+    fill(random(256), random(256), random(256));
+  }
 }
